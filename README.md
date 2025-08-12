@@ -1,4 +1,4 @@
-# BERT Classification
+# BERT Classifier
 
 Train, evaluate, and serve a BERT text classifier with Hugging Face.
 
