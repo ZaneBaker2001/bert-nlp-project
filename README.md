@@ -8,6 +8,33 @@ Train, evaluate, and serve a BERT text classifier with Hugging Face.
 - Clean FastAPI server for production‑style inference
 - Docker support & tests
 
+## Directory Structure
+```
+bert-nlp-project/
+├─ README.md
+├─ pyproject.toml
+├─ requirements.txt
+├─ Makefile
+├─ Dockerfile
+├─ .env.example
+├─ configs/
+│  └─ config.yaml
+├─ data/                 # (optional) local CSVs if not using HF datasets
+├─ models/               # saved checkpoints
+├─ src/
+│  ├─ __init__.py
+│  ├─ config.py
+│  ├─ data.py
+│  ├─ models.py
+│  ├─ train.py
+│  ├─ eval.py
+│  ├─ infer.py
+│  ├─ server.py
+│  └─ utils.py
+└─ tests/
+   └─ test_smoke.py
+```
+
 ## Quickstart
 ```bash
 # 1) Environment
