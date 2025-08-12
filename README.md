@@ -28,3 +28,23 @@ uvicorn src.server:app --host 0.0.0.0 --port 8000
 # curl example
 curl -X POST http://localhost:8000/predict -H 'Content-Type: application/json' \
   -d '{"texts":["Stocks rally as CPI cools"], "top_k":3}'
+```
+
+## Custom Dataset (CSV)
+Provide a CSV with columns text and label (string or int). Update configs/config.yaml to set dataset.name: null and dataset.train_file / dataset.validation_file.
+
+## Docker 
+To use Docker, run the following commands:
+```
+docker build -t bert-nlp .
+docker run --rm -p 8000:8000 bert-nlp
+```
+
+## Tests 
+To run tests, run the following command:
+```
+pytest -q
+```
+
+
+
