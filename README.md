@@ -1,4 +1,4 @@
-# BERT NLP Project (Classification)
+# BERT Classification
 
 Train, evaluate, and serve a BERT text classifier with Hugging Face.
 
